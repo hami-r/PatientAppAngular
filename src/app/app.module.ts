@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AddPatientComponent } from './add-patient/add-patient.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ViewPatientComponent } from './view-patient/view-patient.component';
 
 let myRoutes:Routes = [
   {
@@ -17,7 +18,8 @@ let myRoutes:Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    AddPatientComponent
+    AddPatientComponent,
+    ViewPatientComponent
   ],
   imports: [
     BrowserModule,
