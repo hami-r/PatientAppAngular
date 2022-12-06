@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-2 m-2">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Patient Code</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>Doctor Name</th>
+                                <th>Appointment Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of patient">
+                                <td>{{i.patientCode}}</td>
+                                <td>{{i.name}}</td>
+                                <td>{{i.gender}}</td>
+                                <td>{{i.age}}</td>
+                                <td>{{i.doctorName}}</td>
+                                <td>{{i.appointmentDate}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
