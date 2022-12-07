@@ -28,6 +28,7 @@ export class AddPatientComponent {
     console.log(patient);
     this.api.addPatient(patient).subscribe(
       (response:any) => {
+        console.log(response);
         if (response.status == "success") {
           alert("added successfully")
           this.patientCode = ""
