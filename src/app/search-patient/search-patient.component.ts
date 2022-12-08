@@ -37,7 +37,8 @@ export class SearchPatientComponent {
         console.log(response);
         if(response.status=="success"){
           alert("deleted successfully")
-          this.route.navigate(['/search'])
+          // this.route.navigate(['/search'])
+          window.location.reload()
         }
       }
     )
